@@ -1,7 +1,7 @@
 
 1： 添加一个 DOM 容器到 HTML
 2：添加 Script 标签
-3：创建一个 React 组件 - js 放到public 中
+3：创建一个 React 组件 - js 放到public 中 (js可能被浏览器block过滤)
 
 
 参考
