@@ -22,9 +22,10 @@ app.use(nunjucks({
 }))
 
 // 4） views文件夹 下建立 hello.html ctx.render 渲染
-app.use(ctx => {
+app.use(async ctx => {
   // ctx.body = 'Hello Koa';
-  ctx.render('hello', {
+  // ctx.render 函数是一个异步函数， 一定要加await; 同时app.use 函数要加async
+  await ctx.render('hello', {
     name: 'koa'
   })
 });

@@ -30,14 +30,14 @@ app.use(async (ctx, next) => {
 // 3） 写路径
 router.get('/', async (ctx, next) => {
   // ctx.body = 'Hello Koa';
-  ctx.render('hello', {
+  await ctx.render('hello', {
     name: 'koa router'
   })
 });
 
 router.get('/about', async (ctx, next) => {
   // ctx.body = 'Hello Koa'; 
-  ctx.render('hello', {
+  await ctx.render('hello', {
     name: 'about'
   })
 });
