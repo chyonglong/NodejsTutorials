@@ -21,7 +21,7 @@ module.exports = require('./app.js')
 ``` javascript
 "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon star.js"
+    "start": "forever -w star.js"
   },
 ``` 
 复制代码直接运行`npm start`, 这时候可以看到我们的项目已经支持import语法了
